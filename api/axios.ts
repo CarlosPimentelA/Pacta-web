@@ -3,7 +3,7 @@ import { getToken } from '@clerk/nextjs';
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: process.env.NEXT_PUBLIC_API_URL, // Asegúrate de usar NEXT_PUBLIC_
+    baseURL: process.env.NEXT_PUBLIC_API_URL_PROD, // Asegúrate de usar NEXT_PUBLIC_
 });
 
 api.interceptors.request.use(async (config) => {
