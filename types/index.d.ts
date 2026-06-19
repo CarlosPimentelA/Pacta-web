@@ -3,3 +3,8 @@ export interface ApiResponse<T> {
     error: unknown;
     loading: boolean;
 }
+
+export interface BillingHealth {
+    status: string,
+    tenantId: string
+}

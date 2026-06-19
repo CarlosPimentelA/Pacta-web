@@ -1,5 +1,5 @@
 "use client"
-import type { BillingHealth } from '@repo/types';
+import { BillingHealth } from '../types/index';
 import { useApi } from "../hooks/useFetch";
 
 function App() {
