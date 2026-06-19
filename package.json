@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint \"{api,app,hooks,types,providers,test}/**/*.ts\"",
+  "lint:fix": "eslint \"{api,app,hooks,types,providers,test}/**/*.ts\" --fix",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@clerk/nextjs": "^7.5.2",
