@@ -3,6 +3,7 @@ import { BillingHealth } from '../types/index';
 import { useApi } from "../hooks/useFetch";
 
 function App() {
+
   const { data, error, isLoading } = useApi<BillingHealth>('/billing/health');
 
   if (isLoading) return <button disabled>Cargando...</button>;
