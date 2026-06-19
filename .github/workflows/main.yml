@@ -30,10 +30,10 @@ jobs:
           cache: 'pnpm'   
 
       - name: Instalar dependencias
-        run: npm ci 
+        run: pnpm ci 
 
       - name: Ejecutar Linter
-        run: npm run lint
+        run: pnpm run lint
 
       - name: Ejecutar Type-Check 
-        run: npm run type-check
+        run: pnpm run type-check
